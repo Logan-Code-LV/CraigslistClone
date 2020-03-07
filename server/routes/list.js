@@ -24,11 +24,16 @@ router.get("/categories", (req, res, next) => {
   })
 })
 
-router.post("/post", (req, res, next) => {
-  const title = req.body.title
-  const description = req.body.description
+router.post("/post", (req, res) => {
+  const sql = `INSERT INTO post`
+  const values = [req.body.id]
 
-  res.json("darknesssss")
+  conn.query(sql, values, (err, results, fields) => {
+    res.send({
+      title: "charlie",
+      description: "murphy"
+    })
+  })
 })
 
 module.exports = router
