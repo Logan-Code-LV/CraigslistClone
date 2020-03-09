@@ -14,7 +14,6 @@ export default props => {
         <h5>create a posting</h5>
         <h5>my account</h5>
         <textarea>search ryanslist</textarea>
-        <img src="screenshot.jpg" alt="calendar" />
         <br />
         <h5>help, faq, abuse, legal</h5>
         <h5>avoid scams and fraud</h5>
