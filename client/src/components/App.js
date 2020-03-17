@@ -12,9 +12,9 @@ export default props => {
     <Router>
       <div className="wrapper">
         <Route exact path="/" component={Maincat} />
-        <Route exact path="/Post/:id" component={Post} />
+        <Route exact path="/posting/:id" component={Post} />
+        <Route exact path="/:id" component={Listings} />
         <Route exact path="/:id/create" component={CreatePost} />
-        <Route exact path="/listings/:id" component={Listings} />
       </div>
     </Router>
   )

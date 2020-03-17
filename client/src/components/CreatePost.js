@@ -24,6 +24,7 @@ export default props => {
             onChange={e => setDesc(e.target.value)}
             value={desc}
           ></textarea>
+          <button type="submit">Create Post</button>
         </div>
       </form>
     </div>

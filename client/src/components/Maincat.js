@@ -8,7 +8,7 @@ export default props => {
 
   return (
     <div className="parent">
-      <div>
+      <div className="side">
         <h1>ryanslist</h1>
         <br />
         <h5>create a posting</h5>
@@ -35,7 +35,7 @@ export default props => {
         <div className="child">
           <h1 key={`parent-${parent.id}`}>{parent.name}</h1>
           {parent.child.map(subcat => (
-            <Link key={`subcat-${subcat.id}`} to={`/listings/${subcat.id}`}>
+            <Link key={`subcat-${subcat.id}`} to={`/${subcat.id}`}>
               <p>{subcat.name}</p>
             </Link>
           ))}

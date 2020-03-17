@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import { useCats } from "../hooks"
 import { Link } from "react-router-dom"
+import CreatePost from "./CreatePost"
 import moment from "moment"
 
 export default props => {
@@ -13,16 +14,7 @@ export default props => {
   return (
     <div>
       <h1>{currentCategory}</h1>
+      <Link to={"/" + props.match.params.id + "/create"}>Create Post</Link>
     </div>
   )
 }
-
-//return <h1>{props.match.params.id}</h1>
-
-// {posts.map(p => (
-//         <div>
-//           <Link to={`/postings/${p.id}`}>
-//             {p.name} - {moment.fromNow(p.time.created)}
-//           </Link>
-//         </div>
-//       ))}
